@@ -1,20 +1,21 @@
+// App.tsx
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { LoyaltyProvider } from './context/LoyaltyContext.tsx';
+import AppNavigator from './navigation/AppNavigator.tsx';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <SafeAreaProvider> {/* Recommended for handling safe areas */}
+            <LoyaltyProvider> {/* Wraps the app with loyalty state */}
+                <NavigationContainer> {/* Handles navigation state */}
+                    <AppNavigator /> {/* Renders the main tab navigator */}
+                </NavigationContainer>
+            </LoyaltyProvider>
+             <StatusBar style="auto" /> {/* Controls the status bar style */}
+        </SafeAreaProvider>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
