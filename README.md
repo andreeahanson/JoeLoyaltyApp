@@ -76,10 +76,39 @@ Before you begin, ensure you have met the following requirements:
 The app should now build and launch on your selected device/simulator.
 
 ## Project Structure
-
-JoeLoyaltyApp/│├── assets/ # Static assets (images, fonts)│ └── ...│├── context/ # React Context for global state│ └── LoyaltyContext.tsx│├── data/ # Mock data│ └── mockData.ts│├── navigation/ # Navigation configuration│ └── AppNavigator.tsx│├── screens/ # Screen components│ ├── HomeScreen.tsx│ ├── OffersScreen.tsx│ └── ProfileScreen.tsx│├── types/ # TypeScript type definitions│ └── index.ts│├── .expo/ # Expo configuration files (generated, usually gitignored)├── node_modules/ # Project dependencies (generated, gitignored)│├── .gitignore # Files ignored by Git├── App.tsx # Root application component├── app.json # Expo configuration file├── babel.config.js # Babel configuration├── package.json # Project metadata and dependencies├── README.md # This file└── tsconfig.json # TypeScript configuration
-
-
+```
+JoeLoyaltyApp/
+│
+├── assets/ # Static assets (images, fonts)
+│ └── ... # (Placeholder for actual asset files)
+│
+├── context/ # React Context for global state
+│ └── LoyaltyContext.tsx
+│
+├── data/ # Mock data
+│ └── mockData.ts
+│
+├── navigation/ # Navigation configuration
+│ └── AppNavigator.tsx
+│
+├── screens/ # Screen components
+│ ├── HomeScreen.tsx
+│ ├── OffersScreen.tsx
+│ └── ProfileScreen.tsx
+│
+├── types/ # TypeScript type definitions
+│ └── index.ts
+│
+├── .expo/ # Expo configuration files (generated, usually gitignored)
+├── node_modules/ # Project dependencies (generated, gitignored)
+│
+├── .gitignore # Files ignored by Git
+├── App.tsx # Root application component
+├── app.json # Expo configuration file
+├── babel.config.js # Babel configuration
+├── package.json # Project metadata and dependencies
+├── README.md # This file
+└── tsconfig.json # TypeScript configuration```
 
 ## Future Enhancements (Potential Ideas)
 
